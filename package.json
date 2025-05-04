@@ -1,0 +1,35 @@
+{
+  "name": "@xiaoshubao/samsung-iap",
+  "version": "1.0.37",
+  "description": "Samsung IAP integration for Expo",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "expo",
+    "samsung",
+    "iap",
+    "in-app-purchase"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@expo/config-plugins": "^7.0.0"
+  },
+  "files": [
+    "dist",
+    "build.gradle",
+    "README.md",
+    "package.json",
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "tsconfig.esm.json",
+    "android"
+  ],
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

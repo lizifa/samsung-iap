@@ -1,0 +1,18 @@
+# 开发文件
+.git
+.gitignore
+.npmignore
+node_modules
+example
+*.log
+
+# 构建文件
+src
+*.ts
+*.tsx
+!*.d.ts
+
+# 配置文件
+tsconfig.json
+tsconfig.esm.json
+build.gradle 
