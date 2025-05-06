@@ -1,6 +1,6 @@
 {
   "name": "@xiaoshubao/samsung-iap",
-  "version": "1.0.45",
+  "version": "1.0.47",
   "description": "Samsung IAP integration for Expo",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -31,5 +31,9 @@
   ],
   "devDependencies": {
     "typescript": "^5.0.0"
+  },
+  "expo": {
+    "name": "samsung-iap",
+    "platforms": ["android"]
   }
 }

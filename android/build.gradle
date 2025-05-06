@@ -1,15 +1,13 @@
-plugins {
-    id('com.android.library')
-    id('kotlin-android')
-}
+apply plugin: "com.android.library"
+apply plugin: "org.jetbrains.kotlin.android"
 
 android {
     namespace 'com.samsung.iap'
-    compileSdk 34
+    compileSdk rootProject.ext.compileSdkVersion
     
     defaultConfig {
-        minSdkVersion 23
-        targetSdkVersion 34
+        minSdk rootProject.ext.minSdkVersion
+        targetSdk rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
     }
@@ -32,8 +30,8 @@ android {
 }
 
 dependencies {
-    implementation "com.facebook.react:react-native:0.73.4"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0"
+    implementation "com.facebook.react:react-native:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${rootProject.ext.kotlinVersion}"
     implementation files('libs/samsung-iap-6.4.0.aar')
     implementation "com.facebook.react:react-android"
     implementation "com.facebook.soloader:soloader:0.10.5"

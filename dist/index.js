@@ -38,6 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.IapHelper = void 0;
 var react_native_1 = require("react-native");
+// Implementation
 var SamsungIap = react_native_1.NativeModules.SamsungIap;
 exports.IapHelper = {
     setOperationMode: function (mode) { return __awaiter(void 0, void 0, void 0, function () {
